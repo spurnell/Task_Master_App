@@ -55,7 +55,7 @@ def update(id):
                 db.session.commit()
                 return redirect('/')
             except:
-                return 'There was a problem updating your task - it is not centering'
+                return 'There was a problem updating your task'
         else:
             return render_template('update.html', task=task)
 
